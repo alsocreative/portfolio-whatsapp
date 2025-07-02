@@ -18,11 +18,11 @@ export default function TestimonialCard({ data }) {
     <div className="bg-[var(--whatsapp-panel-bg)] p-4 rounded-lg border border-[var(--whatsapp-border)]">
       {/* Quote */}
       <div className="mb-4">
-        <div className="text-[var(--whatsapp-primary)] text-4xl mb-2">"</div>
+        <div className="text-[var(--whatsapp-primary)] text-4xl mb-2">&ldquo;</div>
         <p className="text-[var(--whatsapp-text-primary)] leading-relaxed italic">
           {data.text}
         </p>
-        <div className="text-[var(--whatsapp-primary)] text-4xl text-right -mt-6">"</div>
+        <div className="text-[var(--whatsapp-primary)] text-4xl text-right -mt-6">&rdquo;</div>
       </div>
 
       {/* Rating */}

@@ -5,8 +5,8 @@ import Sidebar from './sidebar/Sidebar';
 import ChatArea from './chat/ChatArea';
 import { portfolioData } from '../data/portfolio';
 
-export default function WhatsAppLayout() {
-  const [selectedContact, setSelectedContact] = useState('about');
+export default function WhatsAppLayout({ defaultContact = 'about' }) {
+  const [selectedContact, setSelectedContact] = useState(defaultContact);
   const [isMobile, setIsMobile] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
